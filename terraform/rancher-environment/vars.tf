@@ -9,3 +9,8 @@ variable "keypair" {
   type    = "string"
   default = "id_rsa-rancher"
 }
+
+# this is just informational
+output "ssh_username" {
+  value = "ubuntu"
+}

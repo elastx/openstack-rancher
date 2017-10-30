@@ -31,7 +31,7 @@ packages:
   - htop
 runcmd:
   - curl https://releases.rancher.com/install-docker/1.12.sh | sh
-  - docker run -d --privileged=true --restart=always -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock -v /.ssh:/.ssh rancher/server
+  - docker run -d --restart=always -p 8080:8080 -v /.ssh:/.ssh rancher/server
 power_state:
   mode: reboot
   message: Reboot required
